@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <!-- Add our custom StatPart to BedRestEffectiveness stat -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/StatDef[defName="BedRestEffectiveness"]/parts</xpath>
+    <value>
+      <li Class="QualityFurnitureMatters.StatPart_FacilityQuality" />
+    </value>
+  </Operation>
+
+  <!-- 
+    Change EndTable maxSimultaneous from 1 to 2
+    This allows up to 2 end tables to link to a single bed
+  -->
+  <Operation Class="PatchOperationReplace">
+    <xpath>/Defs/ThingDef[defName="EndTable"]/comps/li[@Class="CompProperties_Facility"]/maxSimultaneous</xpath>
+    <value>
+      <maxSimultaneous>2</maxSimultaneous>
+    </value>
+  </Operation>
+
+  <!-- 
+    Dresser already has maxSimultaneous=1, which is correct.
+    No patch needed for dresser count.
+  -->
+
+</Patch>

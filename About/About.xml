@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>DakotaCopas.QualityFurnitureMatters</packageId>
+  <name>Quality Furniture Matters</name>
+  <author>Dakota Copas</author>
+  <url>https://github.com/DakotaCopas/QualityFurnitureMatters</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>Makes the quality of end tables and dressers matter by adding rest effectiveness bonuses to linked beds.
+
+Higher quality furniture provides better rest:
+- Awful: -2% rest effectiveness
+- Poor: -1% rest effectiveness  
+- Normal: No change
+- Good: +1% rest effectiveness
+- Excellent: +2% rest effectiveness
+- Masterwork: +4% rest effectiveness
+- Legendary: +8% rest effectiveness
+
+Maximum linkable furniture per bed:
+- 1 Dresser
+- 2 End Tables
+
+With legendary quality furniture, you can achieve up to +24% rest effectiveness bonus!</description>
+  <modDependencies>
+    <li>
+      <packageId>Ludeon.RimWorld</packageId>
+      <displayName>RimWorld</displayName>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+  </loadAfter>
+</ModMetaData>
