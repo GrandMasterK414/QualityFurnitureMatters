@@ -28,16 +28,17 @@ A RimWorld 1.6 mod that makes the quality of end tables and dressers matter by a
 2. Place the `QualityFurnitureMatters` folder in your RimWorld `Mods` directory
 3. Enable the mod in RimWorld's mod menu
 
-## Building from Source
+## Building from Source (manual)
 
-If you want to modify the C# code:
+If you want to modify the C# code and build the DLL locally, run the following from PowerShell in this repository:
 
 ```powershell
 cd Source
+dotnet restore "QualityFurnitureMatters.csproj"
 dotnet build -c Release
 ```
 
-The compiled DLL will be placed in the `Assemblies` folder.
+The compiled DLL will be placed in the `Assemblies` folder. Note: CI was previously considered but has been intentionally disabled; builds are done locally instead.
 
 ## Requirements
 
