@@ -1,40 +1,56 @@
-# Quality Furniture Matters
+# Quality Furniture Matters (v0.1.2)
 
-A RimWorld 1.6 mod that makes the quality of end tables and dressers matter by adding rest effectiveness bonuses to linked beds.
+Adds small, quality-based rest effectiveness bonuses to beds from linked furniture (end tables and dressers). Bonuses are calculated at runtime from furniture quality so furniture themselves do not expose a special `BedRestEffectiveness` stat — this improves compatibility with other mods and keeps the UI uncluttered.
 
-## Features
+## Highlights
+- Runtime, quality-based bonuses (no new furniture stat shown)
+- Conservative defaults to stay friendly to vanilla gameplay
+- In-game settings for toggles, per-bed caps, and a global multiplier
 
-Quality-based rest effectiveness bonuses from linked end tables and dressers:
+## Default mapping (per-item additive bonus)
 
-| Quality | Rest Effectiveness Bonus |
-|---------|-------------------------|
-| Awful | -2% |
-| Poor | -1% |
+| Quality | Bonus |
+|---------|-------:|
+| Awful | -1% |
+| Poor | -0.5% |
 | Normal | 0% |
-| Good | +1% |
-| Excellent | +2% |
-| Masterwork | +4% |
-| Legendary | +8% |
+| Good | +0.5% |
+| Excellent | +1% |
+| Masterwork | +2% |
+| Legendary | +4% |
 
-## Linkable limits per bed
-
+## Default caps (per-bed)
 - Max 1 Dresser
-- Max 2 End Tables
+- Max 1 End Table
+- Max 2 total furniture counted
 
-## Maximum potential bonus
-
-With 2 legendary end tables + 1 legendary dresser = +24% rest effectiveness
-
----
-
-For installation and author details see the `About` folder and `About/About.xml` in this repository.
+These conservative defaults avoid large swings in rest effectiveness. Adjust them in-game via Mod Settings (Mods → Quality Furniture Matters → Settings).
 
 ## Installation
+1. Download the latest release ZIP from the Releases page: https://github.com/GrandMasterK414/QualityFurnitureMatters/releases/tag/v0.1.2
+2. Extract or copy the `QualityFurnitureMatters` folder into RimWorld's `Mods/` directory so the mod folder contains `About/`, `Assemblies/`, `Defs/`, and `Patches/`.
+3. Start RimWorld and enable the mod in the Mods menu.
 
-Download the included zip (or copy the mod folder) into RimWorld's `Mods/` folder so it contains `About/`, `Assemblies/`, `Defs/`, and `Patches/`, then enable the mod in-game.
+## Settings
+Open `Mods` → `Quality Furniture Matters` → `Settings` to:
+- Toggle end-table and dresser contributions
+- Adjust per-bed caps (dresser / end table / total)
+- Apply a global multiplier to tune balance
+
+## Modder notes
+- If you want this mod to treat additional furniture as dressers or end-tables, add their `defName` to `Defs/QualityFurnitureMattersConfigDefs.xml` or create a new Def of type `QualityFurnitureMatters.QualityFurnitureConfig`.
+
+## Compatibility
+- Target: RimWorld 1.6
+- This mod does not add or modify furniture placement rules. It only computes small runtime bonuses based on furniture quality.
+
+## Reporting issues & feedback
+- Please open issues on GitHub: https://github.com/GrandMasterK414/QualityFurnitureMatters/issues
 
 ## License
+MIT — see `LICENSE` for details.
 
-This mod is provided under the MIT License. See `LICENSE` for details.
+## Changelog
+See `CHANGELOG.md` for release notes. (This repository provides runtime-only releases; source has been moved to a private backup.)
 
 

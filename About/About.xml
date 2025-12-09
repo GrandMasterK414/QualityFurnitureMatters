@@ -7,26 +7,11 @@
   <supportedVersions>
     <li>1.6</li>
   </supportedVersions>
-  <description>Makes the quality of end tables and dressers matter by adding rest effectiveness bonuses to linked beds.
+  <description>Small, quality-based rest-effectiveness bonuses from nearby furniture (end tables and dressers).
 
-Features
-Quality-based rest effectiveness bonuses from linked end tables and dressers:
+Bonuses are calculated at runtime from furniture quality; furniture do not show a special `BedRestEffectiveness` stat. Defaults are conservative to preserve vanilla balance: max 1 dresser, max 1 end table, and max 2 total furniture counted per bed. In-game settings (Mods → Quality Furniture Matters → Settings) let you toggle furniture types, change per-bed caps, and apply a global multiplier.
 
-Quality	Rest Effectiveness Bonus
-Awful	-2%
-Poor	-1%
-Normal	0%
-Good	+1%
-Excellent	+2%
-Masterwork	+4%
-Legendary	+8%
-
-Linkable limits per bed:
-
-Max 1 Dresser
-Max 2 End Tables
-
-Maximum potential bonus: With 2 legendary end tables + 1 legendary dresser = +24% rest effectiveness</description>
+See the README or Releases page for download and full details: https://github.com/GrandMasterK414/QualityFurnitureMatters/releases/tag/v0.1.2</description>
   <modDependencies>
     <li>
       <packageId>Ludeon.RimWorld</packageId>
