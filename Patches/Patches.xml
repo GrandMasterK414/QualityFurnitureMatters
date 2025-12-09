@@ -9,16 +9,13 @@
     </value>
   </Operation>
 
-  <!-- 
-    Change EndTable maxSimultaneous from 1 to 2
-    This allows up to 2 end tables to link to a single bed
+  <!--
+    NOTE: We avoid changing EndTable.maxSimultaneous here to maximize compatibility
+    with other mods. The StatPart caps contributions to 2 end tables / 1 dresser
+    (up to 3 total) without altering placement rules. If you want placement to
+    allow two end tables per bed, change the original game defs or keep a small
+    optional patch in a fork.
   -->
-  <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/ThingDef[defName="EndTable"]/comps/li[@Class="CompProperties_Facility"]/maxSimultaneous</xpath>
-    <value>
-      <maxSimultaneous>2</maxSimultaneous>
-    </value>
-  </Operation>
 
   <!-- Add BedRestEffectiveness stat to EndTable so it shows in furniture stats (base: 1%) -->
   <Operation Class="PatchOperationAdd">
