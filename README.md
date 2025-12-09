@@ -1,5 +1,9 @@
 # Quality Furniture Matters
 
+A small release is available: **v0.1.0** — download the packaged mod ZIP from the GitHub Releases page:
+
+[https://github.com/GrandMasterK414/QualityFurnitureMatters/releases/tag/v0.1.0](https://github.com/GrandMasterK414/QualityFurnitureMatters/releases/tag/v0.1.0)
+
 A RimWorld 1.6 mod that makes the quality of end tables and dressers matter by adding rest effectiveness bonuses to linked beds.
 
 ## Features
