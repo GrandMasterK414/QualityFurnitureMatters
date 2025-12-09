@@ -48,7 +48,8 @@ An optional helper script `upload_workshop.ps1` is included in this mod root to 
 .\upload_workshop.ps1 -SteamCmdPath 'C:\steamcmd\steamcmd.exe' -AppId 294100 -PublishedFileId 1234567890
 ```
 
-- The script reads `About/About.xml` to populate the workshop title and description, writes `workshop_build.vdf`, and calls `steamcmd +login <user> <pass> +workshop_build_item <appid> <vdf> +quit`.
+- The script reads `About/About.xml` to populate the workshop title and description and writes `workshop_build.vdf`.
+- For security the script sends the login command to `steamcmd` via stdin (not on the command line), which avoids putting your plaintext password in the process command line. The script does not write your password to disk.
 - **Security:** the script prompts for your Steam credentials locally. Do not paste your Steam password into this chat; run the script locally on your machine.
 
 Recommended workflow: run the script from the mod folder (the script uses the script folder as the content folder), verify the created `workshop_build.vdf`, then allow the script to call `steamcmd` to perform the upload.
