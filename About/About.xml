@@ -10,20 +10,24 @@
   </supportedVersions>
   <description>Makes the quality of end tables and dressers matter by adding rest effectiveness bonuses to linked beds.
 
-Higher quality furniture provides better rest:
-- Awful: -2% rest effectiveness
-- Poor: -1% rest effectiveness  
-- Normal: No change
-- Good: +1% rest effectiveness
-- Excellent: +2% rest effectiveness
-- Masterwork: +4% rest effectiveness
-- Legendary: +8% rest effectiveness
+Features
+Quality-based rest effectiveness bonuses from linked end tables and dressers:
 
-Maximum linkable furniture per bed:
-- 1 Dresser
-- 2 End Tables
+Quality	Rest Effectiveness Bonus
+Awful	-2%
+Poor	-1%
+Normal	0%
+Good	+1%
+Excellent	+2%
+Masterwork	+4%
+Legendary	+8%
 
-With legendary quality furniture, you can achieve up to +24% rest effectiveness bonus!</description>
+Linkable limits per bed:
+
+Max 1 Dresser
+Max 2 End Tables
+
+Maximum potential bonus: With 2 legendary end tables + 1 legendary dresser = +24% rest effectiveness</description>
   <modDependencies>
     <li>
       <packageId>Ludeon.RimWorld</packageId>
