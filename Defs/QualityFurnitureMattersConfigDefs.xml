@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--
+    Configuration def for QualityFurnitureMatters.
+    Other mods or users can either edit this file or add their own Def
+    with the same type to register additional furniture defNames.
+  -->
+  <QualityFurnitureMatters.QualityFurnitureConfig>
+    <defName>QualityFurnitureMattersConfig</defName>
+    <endTableDefNames>
+      <li>EndTable</li>
+    </endTableDefNames>
+    <dresserDefNames>
+      <li>Dresser</li>
+    </dresserDefNames>
+    <otherFacilityDefNames>
+      <!-- Add other furniture defNames here if you want them considered early -->
+    </otherFacilityDefNames>
+  </QualityFurnitureMatters.QualityFurnitureConfig>
+</Defs>

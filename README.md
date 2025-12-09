@@ -44,6 +44,29 @@ The compiled DLL will be placed in the `Assemblies` folder. Note: CI was previou
 
 - RimWorld 1.6
 
+## Compatibility
+
+If other mods add furniture that should be treated like an end table or dresser for the purposes of this mod, you can register those def names with a small Def. Create a Def (in your mod or here) of type `QualityFurnitureMatters.QualityFurnitureConfig` and list the def names. Example:
+
+```xml
+<Defs>
+	<QualityFurnitureMatters.QualityFurnitureConfig>
+		<defName>QualityFurnitureMattersConfig</defName>
+		<endTableDefNames>
+			<li>MyMod_EndTableVariant</li>
+		</endTableDefNames>
+		<dresserDefNames>
+			<li>MyMod_DresserVariant</li>
+		</dresserDefNames>
+		<otherFacilityDefNames>
+			<li>MyMod_BedsideLamp</li>
+		</otherFacilityDefNames>
+	</QualityFurnitureMatters.QualityFurnitureConfig>
+</Defs>
+```
+
+The mod will consult that Def at runtime and prefer configured entries when classifying linked furniture; it will still fall back to safe heuristics if no config is present.
+
 ## License
 
 MIT License - See [LICENSE](LICENSE) file for details.
