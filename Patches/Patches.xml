@@ -18,20 +18,10 @@
   -->
 
   <!-- Add BedRestEffectiveness stat to EndTable so it shows in furniture stats (base: 1%) -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="EndTable"]/statBases</xpath>
-    <value>
-      <BedRestEffectiveness>0.01</BedRestEffectiveness>
-    </value>
-  </Operation>
-
-  <!-- Add BedRestEffectiveness stat to Dresser so it shows in furniture stats (base: 2%) -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName="Dresser"]/statBases</xpath>
-    <value>
-      <BedRestEffectiveness>0.02</BedRestEffectiveness>
-    </value>
-  </Operation>
+  <!-- NOTE: EndTable and Dresser do not receive a BedRestEffectiveness stat anymore.
+       The StatPart calculates bonuses at runtime from furniture quality so furniture
+       themselves do not expose this stat (improves vanilla compatibility).
+  -->
 
   <!-- 
     Dresser already has maxSimultaneous=1, which is correct.
